@@ -10,6 +10,7 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        Utils.cacheContext = this
         setContentView(R.layout.activity_main2)
+
         content = ByteArray(1000 * 1000 * 40)
     }
 }
