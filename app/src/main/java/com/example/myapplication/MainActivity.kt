@@ -18,8 +18,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         binding=DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.tvvvvvvvvv.setOnClickListener(this)
-
-
     }
 
 
