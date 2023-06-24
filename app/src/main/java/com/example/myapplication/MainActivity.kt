@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     override fun onClick(v: View?) {
-//3
+//33
             var intent = Intent(application, MainActivity2::class.java)
             startActivity(intent);
     }
