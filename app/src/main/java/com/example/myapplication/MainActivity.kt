@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.tvvvvvvvvv.setOnClickListener(this)
     }
 
-
+//dev1
     override fun onClick(v: View?) {
 
             var intent = Intent(application, MainActivity2::class.java)
