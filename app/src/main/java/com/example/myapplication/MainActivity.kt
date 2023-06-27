@@ -27,5 +27,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intent);
 
     //1
+    //2
     }
 }
