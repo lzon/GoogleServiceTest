@@ -25,5 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             var intent = Intent(application, MainActivity2::class.java)
             startActivity(intent);
+
+    //1
     }
 }
