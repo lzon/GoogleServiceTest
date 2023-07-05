@@ -36,15 +36,16 @@ class MainActivity3 : AppCompatActivity(), OnRefreshListener, OnLoadMoreListener
         }
         refreshLayout.setEnableRefresh(false)
         refreshLayout.setEnableLoadMore(false)
-        /*table?.matrixHelper?.setOnInterceptListener { event, distanceX, distanceY ->
-                when (event.action) {
-                    MotionEvent.ACTION_DOWN->{
-                        table?.parent?.requestDisallowInterceptTouchEvent(true)
-                        true
-                }
-            }
-            super.dispatchTouchEvent(event);
+        table?.setOnTouchListener { v, event ->
+            LogUtils.w("=========${!v.canScrollVertically(1)}") //是否滑动到底部
+            false
+        }
+       /* table?.setOnTouchListener { v, event ->
+            LogUtils.w("=========${!v.canScrollVertically(-1)}") //是否滑动到顶部
+            false
         }*/
+
+
     }
 
     override fun onRefresh(refreshLayout: RefreshLayout) {
