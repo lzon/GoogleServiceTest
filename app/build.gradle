@@ -1,9 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
- /*   id 'com.google.gms.google-services'*/
+    id 'com.google.gms.google-services'
 }
-
+apply plugin: 'com.google.firebase.crashlytics'
 android {
     compileSdk 33
 
@@ -13,7 +13,7 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -51,8 +51,11 @@ dependencies {
     api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
     api 'com.blankj:utilcodex:1.30.6'
 
-/*    api platform('com.google.firebase:firebase-bom:29.3.1')
+    api platform('com.google.firebase:firebase-bom:29.3.1')
     api 'com.google.firebase:firebase-perf'
     api 'com.google.firebase:firebase-analytics'
-    api 'com.google.firebase:firebase-crashlytics'*/
+    api 'com.google.firebase:firebase-crashlytics'
+
+
+    implementation 'com.android.support:multidex:1.0.1'
 }
