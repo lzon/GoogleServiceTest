@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+ /*   id 'com.google.gms.google-services'*/
 }
 
 android {
@@ -49,4 +50,9 @@ dependencies {
     api 'com.github.huangyanbin:SmartTable:2.2.0'
     api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
     api 'com.blankj:utilcodex:1.30.6'
+
+/*    api platform('com.google.firebase:firebase-bom:29.3.1')
+    api 'com.google.firebase:firebase-perf'
+    api 'com.google.firebase:firebase-analytics'
+    api 'com.google.firebase:firebase-crashlytics'*/
 }
