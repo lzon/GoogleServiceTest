@@ -1,10 +1,7 @@
 package com.example.myapplication
 
-import android.media.metrics.Event
 import android.os.Build
 import android.os.Bundle
-import android.util.EventLog
-import android.view.MotionEvent
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.bin.david.form.core.SmartTable
@@ -14,7 +11,7 @@ import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 
 
-class MainActivity3 : AppCompatActivity(), OnRefreshListener, OnLoadMoreListener {
+class MainActivity_SmartTable : AppCompatActivity(), OnRefreshListener, OnLoadMoreListener {
     private var table: SmartTable<PM25>? = null
     private lateinit var refreshLayout: RefreshLayout
     private var list = ArrayList<PM25>()
