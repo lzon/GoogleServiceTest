@@ -6,39 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="第一个111"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="这是第二个2222222"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="这是第三个333"
-        app:layout_constraintStart_toEndOf="@+id/space"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Space
-        android:id="@+id/space"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -50,52 +17,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
         android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:background="#673AB7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <TextView
-            android:id="@+id/textView11"
-            app:layout_constraintTop_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:text="Some text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/textView22"
-            app:layout_constraintTop_toBottomOf="@id/textView11"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:text="Some other text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <androidx.constraintlayout.widget.Barrier
-            android:id="@+id/barrier1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:barrierDirection="bottom"
-            app:constraint_referenced_ids="textView11,textView22" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="#F44336"
-            android:text="TextViewTextViewTextViewTextView"
-            app:layout_constraintDimensionRatio="16:9"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="47dp"
+        app:layout_constraintDimensionRatio="16:9"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="48dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
